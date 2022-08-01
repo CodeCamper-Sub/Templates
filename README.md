@@ -3,9 +3,9 @@
 
 ## Installation
 ```
-$ cd /Users/codecamper/Library/Developer/Xcode
+$ cd /Users/user/Library/Developer/Xcode
 $ git clone https://github.com/Eric-HanGyeongSoo/Templates.git
-$ git checkout -b ${branch_name}
+$ git checkout ${branch_name}
 ```
 
 Enjoy!
