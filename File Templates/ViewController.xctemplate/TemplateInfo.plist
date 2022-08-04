@@ -46,9 +46,21 @@
 			<key>Description</key>
 			<string>The name of the Storyboard viewController is included</string>
 			<key>Type</key>
-			<string>text</string>
+			<string>combo</string>
 			<key>NotPersisted</key>
 			<true/>
+			<key>Values</key>
+			<array>
+				<string>Main</string>
+				<string>Onboard</string>
+				<string>Home</string>
+				<string>Search</string>
+				<string>Mypage</string>
+				<string>Common</string>
+				<string>Catalog</string>
+				<string>Scrap</string>
+				<string>Popup</string>
+			</array>
 		</dict>
 	</array>
 </dict>
