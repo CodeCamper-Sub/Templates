@@ -46,7 +46,7 @@
 			<key>Description</key>
 			<string>The name of the Storyboard viewController is included</string>
 			<key>Type</key>
-			<string>combo</string>
+			<string>popup</string>
 			<key>NotPersisted</key>
 			<true/>
 			<key>Values</key>
