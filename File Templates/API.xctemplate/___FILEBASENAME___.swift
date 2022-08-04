@@ -16,10 +16,10 @@ extension ___VARIABLE_productName___: SugarTargetType {
   }
   
   var task: Task {
-   switch self {
-
-   default:
-    return .requestPlain
-   }
+    switch self {
+      
+    default:
+      return .requestPlain
+    }
   }
 }
