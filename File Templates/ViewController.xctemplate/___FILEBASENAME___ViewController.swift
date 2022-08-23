@@ -25,10 +25,10 @@ class ___VARIABLE_productName___ViewController: UIViewController, View {
   override func viewDidLoad() {
     super.viewDidLoad()
     setupViews()
-    self.setNeedsUpdateConstraints()
+    self.view.setNeedsUpdateConstraints()
   }
   
-  override func updateConstraints() {
+  override func updateViewConstraints() {
     if !didSetupConstraints {
       self.setupConstraints()
       didSetupConstraints = true
@@ -44,7 +44,7 @@ class ___VARIABLE_productName___ViewController: UIViewController, View {
   
   
   // MARK: Layout Views
-  func layoutViews() {
+  func setupConstraints() {
     
   }
   

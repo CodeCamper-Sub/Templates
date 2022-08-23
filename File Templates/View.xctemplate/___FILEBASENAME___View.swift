@@ -109,7 +109,6 @@ class ___VARIABLE_productName___Reactor: Reactor {
   func reduce(state: State, mutation: Mutation) -> State {
     var newState = state
     switch mutation {
-    case .setHUD(let active):
       
     }
     return newState
