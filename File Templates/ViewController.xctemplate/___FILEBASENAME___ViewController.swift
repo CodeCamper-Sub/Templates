@@ -33,7 +33,7 @@ class ___VARIABLE_productName___ViewController: UIViewController, View {
       self.setupConstraints()
       didSetupConstraints = true
     }
-    super.updateConstraints()
+    super.updateViewConstraints()
   }
   
   
