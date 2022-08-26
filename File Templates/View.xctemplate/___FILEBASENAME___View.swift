@@ -4,8 +4,10 @@ import Foundation
 import UIKit
 import RxSwift
 import RxCocoa
+import RxRelay
 import ReactorKit
 import SnapKit
+import Then
 
 // MARK: - View
 class ___VARIABLE_productName___View: UIView, View {
@@ -25,13 +27,13 @@ class ___VARIABLE_productName___View: UIView, View {
   override init(frame: CGRect) {
     super.init(frame: frame)
     setupViews()
+    buildViewHierarchy()
     self.setNeedsUpdateConstraints()
   }
   
+  @available(*, unavailable)
   required init?(coder: NSCoder) {
-    super.init(coder: coder)
-    setupViews()
-    self.setNeedsUpdateConstraints()
+    fatalError("init(coder:) has not been implemented")
   }
   
   override func updateConstraints() {
@@ -44,6 +46,12 @@ class ___VARIABLE_productName___View: UIView, View {
   
   // MARK: Setup Views
   func setupViews() {
+    
+  }
+  
+  
+  // MARK: Build View Hierarchy
+  func buildViewHierarchy() {
     
   }
   

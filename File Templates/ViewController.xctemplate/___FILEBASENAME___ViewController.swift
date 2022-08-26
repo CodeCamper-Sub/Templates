@@ -2,10 +2,12 @@
 
 import Foundation
 import UIKit
-import ReactorKit
 import RxSwift
+import RxCocoa
 import RxRelay
+import ReactorKit
 import RxFlow
+import Then
 
 // MARK: - View Controller
 class ___VARIABLE_productName___ViewController: UIViewController, View {
@@ -25,6 +27,7 @@ class ___VARIABLE_productName___ViewController: UIViewController, View {
   override func viewDidLoad() {
     super.viewDidLoad()
     setupViews()
+    buildViewHierarchy()
     self.view.setNeedsUpdateConstraints()
   }
   
@@ -42,6 +45,10 @@ class ___VARIABLE_productName___ViewController: UIViewController, View {
     
   }
   
+  // MARK: Build View Hierarchy
+  func buildViewHierarchy() {
+    
+  }
   
   // MARK: Layout Views
   func setupConstraints() {
