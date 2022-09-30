@@ -7,35 +7,18 @@
 	<key>Kind</key>
 	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
 	<key>Description</key>
-	<string>ViewController Template</string>
+	<string>ViewModel Template</string>
 	<key>Summary</key>
-	<string>ViewController Template</string>
+	<string>ViewModel Template</string>
 	<key>SortOrder</key>
 	<string>1</string>
 	<key>DefaultCompletionName</key>
-	<string>ViewControllerName</string>
+	<string>ViewModelNAme</string>
 	<key>Platforms</key>
 	<array>
 		<string>com.apple.platform.iphoneos</string>
 	</array>
 	<key>MainTemplateFile</key>
 	<string>___FILEBASENAME___.swift</string>
-	<key>Options</key>
-	<array>
-		<dict>
-			<key>Identifier</key>
-			<string>ViewModelName</string>
-			<key>Required</key>
-			<true/>
-			<key>Name</key>
-			<string>ViewModel:</string>
-			<key>Description</key>
-			<string>The name of the ViewModel</string>
-			<key>Type</key>
-			<string>text</string>
-			<key>NotPersisted</key>
-			<true/>
-		</dict>
-	</array>
 </dict>
 </plist>

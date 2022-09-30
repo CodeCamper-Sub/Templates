@@ -2,48 +2,49 @@
 
 import Foundation
 import UIKit
-
-// MARK: - View Controller
-class ___FILEBASENAME___: UIViewController {
+// MARK: - View
+class ___FILEBASENAME___: UIView {
     // MARK: View Components
-    
     
     // MARK: Associated Types
     typealias ViewModel = ___VARIABLE_ViewModelName___
     
-    
     // MARK: Properties
     var didSetupConstraints = false
-    var viewModel = ViewModel()
+    var viewModel: ViewModel
     
-    
-    
-    // MARK: View Life Cycle
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    // MARK: Life Cycle
+    init(viewModel: ViewModel) {
+        self.viewModel = viewModel
+        super.init(frame: .zero)
         setupViews()
         buildViewHierarchy()
-        self.view.setNeedsUpdateConstraints()
+        self.setNeedsUpdateConstraints()
     }
     
-    override func updateViewConstraints() {
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func updateConstraints() {
         if !didSetupConstraints {
             self.setupConstraints()
             didSetupConstraints = true
         }
-        super.updateViewConstraints()
+        super.updateConstraints()
     }
-    
     
     // MARK: Setup Views
     func setupViews() {
         
     }
     
+    
     // MARK: Build View Hierarchy
     func buildViewHierarchy() {
         
     }
+    
     
     // MARK: Layout Views
     func setupConstraints() {
