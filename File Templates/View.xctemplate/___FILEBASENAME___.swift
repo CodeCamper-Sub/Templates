@@ -20,6 +20,7 @@ class ___FILEBASENAME___: UIView {
         setupViews()
         buildViewHierarchy()
         self.setNeedsUpdateConstraints()
+        bind()
     }
     
     required init?(coder: NSCoder) {

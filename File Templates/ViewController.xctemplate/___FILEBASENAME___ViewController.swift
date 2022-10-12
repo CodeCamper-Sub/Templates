@@ -24,6 +24,7 @@ class ___FILEBASENAME___: UIViewController {
         setupViews()
         buildViewHierarchy()
         self.view.setNeedsUpdateConstraints()
+        bind()
     }
     
     override func updateViewConstraints() {
@@ -53,10 +54,6 @@ class ___FILEBASENAME___: UIViewController {
     
     // MARK: Binding
     func bind() {
-        // Action
         
-        // State
-        
-        // View
     }
 }
