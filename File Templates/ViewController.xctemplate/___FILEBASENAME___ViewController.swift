@@ -2,6 +2,8 @@
 
 import Foundation
 import UIKit
+import Combine
+import SwiftUI
 
 // MARK: - View Controller
 class ___FILEBASENAME___: UIViewController {
@@ -15,6 +17,7 @@ class ___FILEBASENAME___: UIViewController {
     // MARK: Properties
     var didSetupConstraints = false
     var viewModel = ViewModel()
+    var subscriptions = [AnyCancellable]()
     
     
     
@@ -48,7 +51,9 @@ class ___FILEBASENAME___: UIViewController {
     
     // MARK: Layout Views
     func setupConstraints() {
+        var constraints = [NSLayoutConstraint]()
         
+        defer { NSLayoutConstraint.activate(constraints) }
     }
     
     

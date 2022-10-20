@@ -2,7 +2,7 @@
 
 import Foundation
 import UIKit
-
+import Combine
 
 class ___FILEBASENAME___ {
     // MARK: Input
@@ -10,6 +10,7 @@ class ___FILEBASENAME___ {
     // MARK: Output
     
     // MARK: Properties
+    var subscriptions = [AnyCancellable]()
     
     // MARK: Life Cycle
     init() {
