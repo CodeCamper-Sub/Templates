@@ -2,6 +2,9 @@
 
 import Foundation
 import UIKit
+import Combine
+import SwiftUI
+
 // MARK: - View
 class ___FILEBASENAME___: UIView {
     // MARK: View Components
@@ -12,6 +15,7 @@ class ___FILEBASENAME___: UIView {
     // MARK: Properties
     var didSetupConstraints = false
     var viewModel: ViewModel
+    var subscriptions = [AnyCancellable]()
     
     // MARK: Life Cycle
     init(viewModel: ViewModel) {
@@ -49,7 +53,9 @@ class ___FILEBASENAME___: UIView {
     
     // MARK: Layout Views
     func setupConstraints() {
+        var constraints = [NSLayoutConstraint]()
         
+        defer { NSLayoutConstraint.activate(constraints) }
     }
     
     
@@ -62,3 +68,14 @@ class ___FILEBASENAME___: UIView {
         // View
     }
 }
+
+#if canImport(SwiftUI) && DEBUG
+struct ___FILEBASENAME___Preview: PreviewProvider {
+    static var previews: some View {
+        ContentViewPreview {
+            let viewModel = ___VARIABLE_ViewModelName___()
+            return ___FILEBASENAME___(viewModel: viewModel)
+        }.previewLayout(.fixed(width: <#width#>, height: <#height#>))
+    }
+}
+#endif
