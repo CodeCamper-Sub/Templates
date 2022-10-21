@@ -14,17 +14,20 @@ class ___FILEBASENAME___: UIView {
     
     // MARK: Properties
     var didSetupConstraints = false
-    var viewModel: ViewModel
+    var viewModel: ViewModel? {
+        didSet {
+            guard let viewModel = viewModel else { return }
+            bind(viewModel: viewModel)
+        }
+    }
     var subscriptions = [AnyCancellable]()
     
     // MARK: Life Cycle
-    init(viewModel: ViewModel) {
-        self.viewModel = viewModel
+    init() {
         super.init(frame: .zero)
         setupViews()
         buildViewHierarchy()
         self.setNeedsUpdateConstraints()
-        bind()
     }
     
     required init?(coder: NSCoder) {
@@ -60,7 +63,7 @@ class ___FILEBASENAME___: UIView {
     
     
     // MARK: Binding
-    func bind() {
+    func bind(viewModel: ViewModel) {
         // Action
         
         // State
@@ -73,8 +76,9 @@ class ___FILEBASENAME___: UIView {
 struct ___FILEBASENAME___Preview: PreviewProvider {
     static var previews: some View {
         ContentViewPreview {
-            let viewModel = ___VARIABLE_ViewModelName___()
-            return ___FILEBASENAME___(viewModel: viewModel)
+            let view = ___FILEBASENAME___()
+            view.viewModel = ___VARIABLE_ViewModelName___()
+            return view
         }.previewLayout(.fixed(width: <#width#>, height: <#height#>))
     }
 }
