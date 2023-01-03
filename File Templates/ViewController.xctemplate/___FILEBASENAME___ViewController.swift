@@ -7,8 +7,7 @@ import RxCocoa
 
 // MARK: - View Controller
 class ___VARIABLE_productName___ViewController: BaseViewController, StoryboardView {
-  
-  // MARK: Constants
+  // MARK: TypeAlias
   typealias Reactor = ___VARIABLE_productName___ViewReactor
   
   
@@ -49,8 +48,7 @@ class ___VARIABLE_productName___ViewController: BaseViewController, StoryboardVi
 
 // MARK: - Reactor
 class ___VARIABLE_productName___ViewReactor: Reactor, Stepper {
-  
-  // MARK: Constants
+  // MARK: Associated Types
   enum Action {
     
   }

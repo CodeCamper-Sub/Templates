@@ -11,7 +11,7 @@ import RxMoya
 
 // MARK: - View
 class ___VARIABLE_productName___: BaseCollectionViewCell, StoryboardView {
-  // MARK: Abstract
+  // MARK: TypeAlias
   typealias Reactor = ___VARIABLE_productName___Reactor
 
   // MARK: UI Component
@@ -36,7 +36,7 @@ class ___VARIABLE_productName___: BaseCollectionViewCell, StoryboardView {
 
 // MARK: - Reactor
 class ___VARIABLE_productName___Reactor: Reactor {
-  // MARK: Abstract
+  // MARK: Associated Types
   enum Action {
 
   }
