@@ -21,21 +21,6 @@
 	<key>MainTemplateFile</key>
 	<string>___FILEBASENAME___.swift</string>
 	<key>Options</key>
-	<array>
-		<dict>
-			<key>Identifier</key>
-			<string>productName</string>
-			<key>Required</key>
-			<true/>
-			<key>Name</key>
-			<string>API: </string>
-			<key>Description</key>
-			<string>The name of the API to create</string>
-			<key>Type</key>
-			<string>text</string>
-			<key>NotPersisted</key>
-			<true/>
-		</dict>
-	</array>
+	<array/>
 </dict>
 </plist>
