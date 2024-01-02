@@ -6,7 +6,7 @@ import Combine
 
 @MainActor
 class ___FILEBASENAME___: ObservableObject {
-  var subscriptions = [AnyCancellable]()
+  var disposeBag = [AnyCancellable]()
   
   init() {
     
