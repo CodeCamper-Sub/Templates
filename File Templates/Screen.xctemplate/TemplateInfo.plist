@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SupportsSwiftPackage</key>
+	<true/>
+	<key>Description</key>
+	<string>Screen</string>
+	<key>Summary</key>
+	<string>Screen</string>
+	<key>Kind</key>
+	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+	<key>DefaultCompletionName</key>
+	<string>File</string>
+	<key>SortOrder</key>
+	<string>1</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>screenName</string>
+			<key>Name</key>
+			<string>Screen Name</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string>screenName</string>
+		</dict>
+	</array>
+</dict>
+</plist>
