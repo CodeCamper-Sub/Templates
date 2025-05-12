@@ -4,23 +4,38 @@
 <dict>
 	<key>SupportsSwiftPackage</key>
 	<true/>
+	<key>Description</key>
+	<string>API</string>
+	<key>Summary</key>
+	<string>API</string>
 	<key>Kind</key>
 	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
-	<key>Description</key>
-	<string>API Template</string>
-	<key>Summary</key>
-	<string>API Template</string>
+	<key>DefaultCompletionName</key>
+	<string>File</string>
 	<key>SortOrder</key>
 	<string>1</string>
-	<key>DefaultCompletionName</key>
-	<string>API</string>
-	<key>Platforms</key>
-	<array>
-		<string>com.apple.platform.iphoneos</string>
-	</array>
-	<key>MainTemplateFile</key>
-	<string>___FILEBASENAME___.swift</string>
 	<key>Options</key>
-	<array/>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>camelcaseApiName</string>
+			<key>Name</key>
+			<string>Camel Cased Api Name</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string>main</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>apiName</string>
+			<key>Name</key>
+			<string>Api Name</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string>Main</string>
+		</dict>
+	</array>
 </dict>
 </plist>
